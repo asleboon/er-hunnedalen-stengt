@@ -1,0 +1,1 @@
+export const YR_BASE_URL =  'https://www.yr.no/api/v0/';
