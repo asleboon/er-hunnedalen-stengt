@@ -25,17 +25,17 @@ const MountainPass: React.FC = () => {
     return (
         <>
             <h1 className={styles.title}>Er Hunnedalen stengt?</h1>
-            <h2 className={styles.title}>{route.isClosed ? 'JA!' : 'Nei'}</h2>
-            <>
+            <h2 className={styles.subTitle}>{route.isClosed ? 'JA!' : 'Nei'}</h2>
+            <div className={styles.card}>
                 {roadMessages && roadMessages.length > 0 ? (
                     roadMessages.map((m) => <p key={m.id}>{m.message}</p>)
                 ) : (
                     <p className={styles.description}>
-                        Det er ikke kommet noen meldinger om at Fylkesvei 45
+                        Det er <span className={styles.iceBlue}>ikke</span> kommet noen melding om at FV. 45
                         mellom Ålgård og Sirdal er stengt.
                     </p>
                 )}
-            </>
+            </div>
         </>
     );
 };
