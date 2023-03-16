@@ -18,16 +18,6 @@ const Home: NextPage = () => (
   <main className={styles.main}>
     <MountainPass />
   </main>
-
-  <footer className={styles.footer}>
-    <a
-      href="#"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Powered by{' '}Boon Technologies
-    </a>
-  </footer>
 </div>
 )
 
